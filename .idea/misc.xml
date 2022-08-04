@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../Users/nirintsoa/Library/Android/sdk/platforms/android-32/data/res/layout/simple_list_item_single_choice.xml" value="0.2206180344478217" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.331" />
         <entry key="app/src/main/res/drawable/ic_baseline_backspace_24.xml" value="0.331" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.331" />
         <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.2215" />
         <entry key="app/src/main/res/layout/activity_call.xml" value="0.2798913043478261" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -18,6 +20,8 @@
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.4180253623188406" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.4180253623188406" />
         <entry key="app/src/main/res/layout/voice_item.xml" value="0.3678749037345306" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.331" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.331" />
         <entry key="app/src/main/res/xml/root_preferences.xml" value="0.4180253623188406" />
       </map>
     </option>
