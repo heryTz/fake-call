@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background"
+    tools:context=".InputFragment">
+
+    <ImageView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black_overlay" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingVertical="16dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:contentDescription="@string/more"
+            app:tint="@color/black_overlay"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="8dp"/>
+
+        <TextView
+            android:id="@+id/input_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="64dp"
+            android:paddingVertical="8dp"
+            android:textColor="@color/black"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/backspace"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLines="1"
+            android:textSize="32sp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_backspace_24"
+            android:contentDescription="@string/remove"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:padding="8dp"
+            app:tint="@color/black_overlay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view2"
+        style="@style/Divider"
+        app:layout_constraintBottom_toTopOf="@id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:columnCount="3"
+        android:paddingHorizontal="42dp"
+        android:paddingVertical="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/fab_call">
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button1" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button2" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button3" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button4" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button5" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button6" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button7" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button8" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button9" />
+
+        <Button
+            android:id="@+id/buttonStar"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonStar" />
+
+        <Button
+            android:id="@+id/button0"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button0" />
+
+        <Button
+            android:id="@+id/buttonSharp"
+            style="@style/Widget.App.ButtonNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonSharp" />
+
+    </GridLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/fab_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_call_24"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
